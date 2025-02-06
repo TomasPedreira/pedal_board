@@ -36,7 +36,7 @@ void loop() {
   double raw_break_pressure;
   read_pedal_sensors(&raw_accel_value_1, &raw_accel_value_2, &raw_break_pressure, RESOLUTION);
   // process_signal(accel_value_1, accel_value_2, break_pressure);
-  send_data_to_dashboard(raw_accel_value_1, raw_accel_value_2, raw_break_pressure);;
+  send_data_to_dashboard(raw_accel_value_1, raw_accel_value_2, raw_break_pressure);
   while(millis() - now < 1000);
 }
 
